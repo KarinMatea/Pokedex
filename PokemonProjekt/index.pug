@@ -1,0 +1,24 @@
+html
+  head
+    link(rel="stylesheet", href="/public/styles/index.css")
+  body
+    h1.id-name
+      | ID: #{pokemon.Id}
+      br
+      | Name: #{pokemon.Name}
+    .container
+      .left-container
+        img(src=pokemon.Bild)
+      .right-container
+        h2 Beschreibung:
+        p= pokemon.Beschreibung
+        h2 Größe:
+        p= pokemon.Größe
+        h2 Gewicht:
+        p= pokemon.Gewicht
+        h2 Fähigkeit:
+        p= pokemon.Fähigkeit
+        h2 Typ:
+        p= pokemon.Typ
+        h2 Geschlecht:
+        p= pokemon.Geschlecht

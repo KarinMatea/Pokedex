@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:'Courier New', Courier, monospace;
+    background-image: url('https://rare-gallery.com/uploads/posts/371181-4k-wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  h1.id-name {
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .left-container {
+    flex: 1;
+  }
+  
+  .right-container {
+    flex: 1;
+    padding-left: 100px;
+    background-color: rgb(251, 252, 252);
+    opacity: 70%;
+  }
+  
+  img {
+    width: 450px;
+    height: auto;
+  }
