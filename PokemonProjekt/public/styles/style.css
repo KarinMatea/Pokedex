@@ -4,11 +4,10 @@ body {
     background-attachment: fixed;
   }
 
-  .misp {
-    font-family:'Courier New', Courier, monospace;
-    text-align: center;
-    font-size: 40px;
-  }
+.centered-image {
+    display: flex;
+    justify-content: center;
+}
   
   .kartenset {
     display: flex;
@@ -27,7 +26,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    opacity: 350%;
+    opacity: 85%;
   }
 
   .karte:hover{
