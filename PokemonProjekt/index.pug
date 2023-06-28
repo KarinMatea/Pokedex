@@ -1,24 +1,422 @@
-html
-  head
-    link(rel="stylesheet", href="/public/styles/index.css")
-  body
-    h1.id-name
-      | ID: #{pokemon.Id}
-      br
-      | Name: #{pokemon.Name}
-    .container
-      .left-container
-        img(src=pokemon.Bild)
-      .right-container
-        h2 Beschreibung:
-        p= pokemon.Beschreibung
-        h2 Größe:
-        p= pokemon.Größe
-        h2 Gewicht:
-        p= pokemon.Gewicht
-        h2 Fähigkeit:
-        p= pokemon.Fähigkeit
-        h2 Typ:
-        p= pokemon.Typ
-        h2 Geschlecht:
-        p= pokemon.Geschlecht
+extends ./templates/layout.pug
+
+block karten
+    -
+        const pokemonData = [{
+            "Id": "001",
+            "Name": "Bisasam",
+            "Typ": "Pflanze/Gift",
+            "Beschreibung": "Bisasam nimmt während der Entwicklung Energie aus seiner Umgebung auf. Die Knospe auf seinem Rücken wird größer und entwickelt sich zu einem Blütenstand.",
+            "Größe": "0.7 m",
+            "Kategorie":"Samen",
+            "Gewicht": "6,9kg",
+            "Fähigkeit": "Notdünger",
+            "Geschlecht": "m, w",
+            "Bild":"images/001.png",
+            "Link":"pokemon1"
+        },
+        {
+            "Id": "002",
+            "Name": "Bisaknosp",
+            "Typ": "Pflanze/Gift",
+            "Beschreibung": "Bisaknosp besitzt einen großen Blütenstand auf seinem Rücken. In diesem Blütenstand befinden sich Pflanzen, die das Pokémon mit Nährstoffen versorgen.",
+            "Größe": "1.0 m",
+            "Kategorie":"Samen",
+            "Gewicht": "13,0kg",
+            "Fähigkeit": "Notdünger",
+            "Geschlecht": "m, w",
+            "Bild":"images/002.png",
+            "Link":"pokemon2"
+        },
+        {
+            "Id": "003",
+            "Name": "Bisaflor",
+            "Typ": "Pflanze/Gift",
+            "Beschreibung": "Bisaflor sammelt Sonnenlicht mit seinen Blütenblättern und wandelt es in Energie um. Es ist in der Lage, einen starken Duft zu verströmen, um Feinde abzuschrecken.",
+            "Größe": "2.0 m",
+            "Kategorie":"Samen",
+            "Gewicht": "100,0kg",
+            "Fähigkeit": "Notdünger",
+            "Geschlecht": "m, w",
+            "Bild":"images/003.png",
+            "Link":"pokemon3"
+        },
+        {
+            "Id": "004",
+            "Name": "Glumanda",
+            "Typ": "Feuer",
+            "Beschreibung": "Glumanda speichert Flammen in seinem Bauch, die als Indikator für seine Gesundheit dienen. Es ist äußerst selten in freier Wildbahn anzutreffen.",
+            "Größe": "0.6 m",
+            "Kategorie":"Echse",
+            "Gewicht": "8,5kg",
+            "Fähigkeit": "Großbrand",
+            "Geschlecht": "m, w",
+            "Bild":"images/004.png",
+            "Link":"pokemon4"
+        },
+        {
+            "Id": "005",
+            "Name": "Glutexo",
+            "Typ": "Feuer",
+            "Beschreibung": "Glutexo hat ein starkes Feuer in seinem Inneren, das von Tag zu Tag größer wird. Es wird schnell wütend und ist ein hartnäckiger Kämpfer.",
+            "Größe": "1.1 m",
+            "Kategorie":"Echse",
+            "Gewicht": "19,0kg",
+            "Fähigkeit": "Großbrand",
+            "Geschlecht": "m, w",
+            "Bild":"images/005.png",
+            "Link":"pokemon5"
+        },
+        {
+            "Id": "006",
+            "Name": "Glurak",
+            "Typ": "Feuer/Flug",
+            "Beschreibung": "Glurak ist ein gefährliches und beeindruckendes Pokémon. Mit seinen mächtigen Flügeln kann es Feuerbälle erzeugen, die ganze Landschaften in Brand setzen können.",
+            "Größe": "1.7 m",
+            "Kategorie":"Echse",
+            "Gewicht": "90,5kg",
+            "Fähigkeit": "Großbrand",
+            "Geschlecht": "m, w",
+            "Bild":"images/006.png",
+            "Link":"pokemon6"
+        },
+        {
+            "Id": "007",
+            "Name": "Schiggy",
+            "Typ": "Wasser",
+            "Beschreibung": "Schiggy ist ein kleines und süßes Pokémon, das eine harte Schale trägt. Es kann in Gewässern leben und mit seinen Flossen schnell schwimmen.",
+            "Größe": "0.5 m",
+            "Kategorie":"Minikröte",
+            "Gewicht": "9,0kg",
+            "Fähigkeit": "Sturzbach",
+            "Geschlecht": "m, w",
+            "Bild":"images/007.png",
+            "Link":"pokemon7"
+        },
+        {
+            "Id": "008",
+            "Name": "Schillok",
+            "Typ": "Wasser",
+            "Beschreibung": "Schillok ist das entwickelte Form von Schiggy. Sein Panzer hat sich vergrößert und bietet besseren Schutz. Es kann seine Schwimmfähigkeiten weiter verbessern.",
+            "Größe": "1.0 m",
+            "Kategorie":"Kröte",
+            "Gewicht": "22,5kg",
+            "Fähigkeit": "Sturzbach",
+            "Geschlecht": "m, w",
+            "Bild":"images/008.png",
+            "Link":"pokemon8"
+        },
+        {
+            "Id": "009",
+            "Name": "Turtok",
+            "Typ": "Wasser",
+            "Beschreibung": "Turtok ist die finale Entwicklungsstufe von Schiggy. Mit seinem gewaltigen Panzer und seinen starken Schwimmfähigkeiten kann es sich selbst vor den stärksten Angriffen schützen.",
+            "Größe": "1.6 m",
+            "Kategorie":"Samen",
+            "Gewicht": "6,9kg",
+            "Fähigkeit": "Notdünger",
+            "Geschlecht": "m, w",
+            "Bild":"images/009.png",
+            "Link":"pokemon9"
+        },
+        {
+            "Id": "010",
+            "Name": "Raupy",
+            "Typ": "Käfer",
+            "Beschreibung": "Raupy besitzt einen starken Appetit und frisst ständig Blätter. Es ist schwach und vorsichtig, sodass es bei Gefahr seinen Körper mit einem Seidenfaden schützt.",
+            "Größe": "0.3 m",
+            "Kategorie":"Wurm",
+            "Gewicht": "2,9kg",
+            "Fähigkeit": "Puderabwehr",
+            "Geschlecht": "m, w",
+            "Bild":"images/010.png",
+            "Link":"pokemon10"
+        },
+        {
+            "Id": "011",
+            "Name": "Safcon",
+            "Typ": "Käfer",
+            "Beschreibung": "Safcon hat einen schützenden Kokon um seinen Körper gewebt. Es bleibt in diesem Kokon verborgen und entwickelt sich langsam weiter.",
+            "Größe": "0.7 m",
+            "Kategorie":"Kokon",
+            "Gewicht": "9,9kg",
+            "Fähigkeit": "Expidermis",
+            "Geschlecht": "m, w",
+            "Bild":"images/011.png",
+            "Link":"pokemon11"
+        },
+        {
+            "Id": "012",
+            "Name": "Smettbo",
+            "Typ": "Käfer/Flug",
+            "Beschreibung": "Smettbo ist das entwickelte Form von Safcon. Es hat zarte Flügel und ist ein geschickter Flieger. Es saugt Nektar aus Blumen, um seine Kräfte wiederherzustellen.",
+            "Größe": "1.1 m",
+            "Kategorie":"Falter",
+            "Gewicht": "32,0kg",
+            "Fähigkeit": "Facettenauge",
+            "Geschlecht": "m, w",
+            "Bild":"images/012.png",
+            "Link":"pokemon12"
+        },
+        {
+            "Id": "013",
+            "Name": "Hornliu",
+            "Typ": "Käfer/Gift",
+            "Beschreibung": "Hornliu besitzt einen giftigen Stachel auf seinem Kopf. Es nutzt seinen Stachel zum Schutz vor Feinden und zur Verteidigung.",
+            "Größe": "0.3 m",
+            "Kategorie":"Raupe",
+            "Gewicht": "3,2kg",
+            "Fähigkeit": "Puderabwehr",
+            "Geschlecht": "m, w",
+            "Bild":"images/013.png",
+            "Link":"pokemon13"
+        },
+        {
+            "Id": "014",
+            "Name": "Kokuna",
+            "Typ": "Käfer/Gift",
+            "Beschreibung": "Kokuna hat sich in einen dicken Kokon eingewebt. Während dieser Phase findet keine Entwicklung statt, es wartet nur auf den richtigen Zeitpunkt, um sich weiterzuentwickeln.",
+            "Größe": "0.6 m",
+            "Kategorie":"Kokon",
+            "Gewicht": "10,0kg",
+            "Fähigkeit": "Expidermis",
+            "Geschlecht": "m, w",
+            "Bild":"images/014.png",
+            "Link":"pokemon14"
+        },
+        {
+            "Id": "015",
+            "Name": "Bibor",
+            "Typ": "Käfer/Gift",
+            "Beschreibung": "Bibor ist das entwickelte Form von Hornliu. Es hat scharfe Klingen an seinen Armen und kann mit seinen Giftstacheln tödliche Angriffe durchführen.",
+            "Größe": "1.0 m",
+            "Kategorie":"Giftbiene",
+            "Gewicht": "29,5kg",
+            "Fähigkeit": "Hexaplaga",
+            "Geschlecht": "m, w",
+            "Bild":"images/015.png",
+            "Link":"pokemon15"
+        },
+        {
+            "Id": "016",
+            "Name": "Taubsi",
+            "Typ": "Normal/Flug",
+            "Beschreibung": "Taubsi hat einen ausgezeichneten Orientierungssinn und kann immer den Weg nach Hause finden, selbst über weite Entfernungen. Es ist ein häufiges Pokémon.",
+            "Größe": "0.3 m",
+            "Kategorie":"Kleinvogel",
+            "Gewicht": "1,8kg",
+            "Fähigkeit": "Adlerauge & Taumelschritt",
+            "Geschlecht": "m, w",
+            "Bild":"images/016.png",
+            "Link":"pokemon16"
+        },
+        {
+            "Id": "017",
+            "Name": "Tauboga",
+            "Typ": "Normal/Flug",
+            "Beschreibung": "Tauboga ist das entwickelte Form von Taubsi. Es hat eine größere Flügelspannweite und kann längere Strecken fliegen. Es gilt als treuer Begleiter.",
+            "Größe": "1.2 m",
+            "Kategorie":"Vogel",
+            "Gewicht": "30,0kg",
+            "Fähigkeit": "Adlerauge & Taumelschritt",
+            "Geschlecht": "m, w",
+            "Bild":"images/017.png",
+            "Link":"pokemon17"
+        },
+        {
+            "Id": "018",
+            "Name": "Tauboss",
+            "Typ": "Normal/Flug",
+            "Beschreibung": "Tauboss ist die finale Entwicklungsstufe von Taubsi. Es hat einen majestätischen Flug und kann hohe Geschwindigkeiten erreichen. Es verteidigt sein Territorium energisch.",
+            "Größe": "1.5 m",
+            "Kategorie":"Vogel",
+            "Gewicht": "39,5kg",
+            "Fähigkeit": "Adlerauge & Taumelschritt",
+            "Geschlecht": "m, w",
+            "Bild":"images/018.png",
+            "Link":"pokemon18"
+        },
+        {
+            "Id": "019",
+            "Name": "Rattfratz",
+            "Typ": "Normal",
+            "Beschreibung": "Rattfratz hat große Vorderzähne, mit denen es alles anknabbern kann. Es ist nachtaktiv und sucht in der Dunkelheit nach Nahrung.",
+            "Größe": "0.3 m",
+            "Kategorie":"Maus",
+            "Gewicht": "3,5kg",
+            "Fähigkeit": "Angsthase",
+            "Geschlecht": "m, w",
+            "Bild":"images/019.png",
+            "Link":"pokemon19"
+        },
+        {
+            "Id": "020",
+            "Name": "Rattikarl",
+            "Typ": "Normal",
+            "Beschreibung": "Rattikarl ist das entwickelte Form von Rattfratz. Es hat scharfe Zähne und kann damit mühelos durch harte Gegenstände beißen. Es ist ein geschickter Jäger.",
+            "Größe": "0.7 m",
+            "Kategorie":"Maus",
+            "Gewicht": "18,5kg",
+            "Fähigkeit": "Angsthase",
+            "Geschlecht": "m, w",
+            "Bild":"images/020.png",
+            "Link":"pokemon20"
+        },
+        {
+            "Id": "021",
+            "Name": "Habitak",
+            "Typ": ["Käfer", "Flug"],
+            "Beschreibung": "Habitak ist ein aggressiver Jäger und greift seine Beute mit seinem scharfen Schnabel an. Es baut Nester in Baumhöhlen.",
+            "Größe": "0,3 m",
+            "Kategorie":"Kleinvogel",
+            "Gewicht": "2,0kg",
+            "Fähigkeit": "Adlerauge",
+            "Geschlecht": "m, w",
+            "Bild":"images/021.png",
+            "Link":"pokemon21"
+        },
+        {
+            "Id": "022",
+            "Name": "Ibitak",
+            "Typ": ["Käfer", "Flug"],
+            "Beschreibung": "Ibitak patrouilliert stolz sein Revier in den Himmel. Es greift Eindringlinge mutig an, um sein Territorium zu verteidigen.",
+            "Größe": "1,2 m",
+            "Kategorie":"Pickvogel",
+            "Gewicht": "38,0kg",
+            "Fähigkeit": "Adlerauge",
+            "Geschlecht": "m, w",
+            "Bild":"images/022.png",
+            "Link":"pokemon22"
+        },
+        {
+            "Id": "023",
+            "Name": "Rettan",
+            "Typ": ["Gift"],
+            "Beschreibung": "Rettan hat eine scharfe Klaue an seinem Schwanzende, die es geschickt einsetzt. Es gilt als Symbol der Stärke und des Stolzes.",
+            "Größe": "2,0 m",
+            "Kategorie":"Schlange",
+            "Gewicht": "6,9kg",
+            "Fähigkeit": "Expidermis, Bedroher",
+            "Geschlecht": "m, w",
+            "Bild":"images/023.png",
+            "Link":"pokemon23"
+        },
+        {
+            "Id": "024",
+            "Name": "Arbok",
+            "Typ": ["Gift"],
+            "Beschreibung": "Arbok steht für Angst und Schrecken. Es hat ein Muster auf seinem Bauch, das wie ein furchteinflößendes Gesicht aussieht.",
+            "Größe": "3,5 m",
+            "Kategorie":"Kobra",
+            "Gewicht": "65,0kg",
+            "Fähigkeit": "Expidermis, Bedroher",
+            "Geschlecht": "m, w",
+            "Bild":"images/024.png",
+            "Link":"pokemon24"
+        },
+        {
+            "Id": "025",
+            "Name": "Pikachu",
+            "Typ": ["Elektro"],
+            "Beschreibung": "Pikachu ist ein niedliches und energiegeladenes Pokémon. Es erzeugt Elektrizität durch Reiben seiner Backen zusammen.",
+            "Größe": "0,4 m",
+            "Kategorie":"Maus",
+            "Gewicht": "6,0kg",
+            "Fähigkeit": "Statik",
+            "Geschlecht": "m, w",
+            "Bild":"images/025.png",
+            "Link":"pokemon25"
+        },
+        {
+            "Id": "026",
+            "Name": "Raichu",
+            "Typ": ["Elektro"],
+            "Beschreibung": "Raichu besitzt eine hohe elektrische Ladung in seinem Körper. Es kann starke Elektroimpulse erzeugen, um seine Feinde zu besiegen.",
+            "Größe": "0,8 m",
+            "Kategorie":"Maus",
+            "Gewicht": "30,0kg",
+            "Fähigkeit": "Statik",
+            "Geschlecht": "m, w",
+            "Bild":"images/026.png",
+            "Link":"pokemon26"
+        },
+        {
+            "Id": "027",
+            "Name": "Sandan",
+            "Typ": ["Boden"],
+            "Beschreibung": "Sandan hat scharfe Stacheln auf seinem Rücken, die es zum Schutz einsetzt. Es rollt sich zusammen und versteckt sich in seinem Panzer, wenn es bedroht wird.",
+            "Größe": "0,6 m",
+            "Kategorie":"Maus",
+            "Gewicht": "12,0kg",
+            "Fähigkeit": "Sandschleier",
+            "Geschlecht": "m, w",
+            "Bild":"images/027.png",
+            "Link":"pokemon27"
+        },
+        {
+            "Id": "028",
+            "Name": "Sandamer",
+            "Typ": ["Boden"],
+            "Beschreibung": "Sandamer ist ein schnelles und wendiges Pokémon. Es kann Sandstürme erzeugen, um seine Gegner zu verwirren und anzugreifen.",
+            "Größe": "1,0 m",
+            "Kategorie":"Maus",
+            "Gewicht": "29,5kg",
+            "Fähigkeit": "Sandschleier",
+            "Geschlecht": "m, w",
+            "Bild":"images/028.png",
+            "Link":"pokemon28"
+        },
+        {
+            "Id": "029",
+            "Name": "Nidoran",
+            "Typ": ["Gift"],
+            "Beschreibung": "Nidoran (weiblich) hat scharfe Giftstacheln auf ihrem Rücken. Sie sind vorsichtig und scheu, aber können auch mutig sein, wenn sie ihr Territorium verteidigen.",
+            "Größe": "0,4 m",
+            "Kategorie":"Giftdorn",
+            "Gewicht": "7,0kg",
+            "Fähigkeit": "Giftdorn, Rivalität",
+            "Geschlecht": "w",
+            "Bild":"images/029.png",
+            "Link":"pokemon29"
+        },
+        {
+            "Id": "",
+            "Name": "?",
+            "Bild": "images/pokeball.jpg"
+        },
+        {
+            "Id": "",
+            "Name": "?",
+            "Bild": "images/pokeball.jpg"
+
+        },
+        {
+            "Id": "030",
+            "Name": "Nidorina",
+            "Typ": ["Gift"],
+            "Beschreibung": "Nidorina ist ein sanftmütiges Pokémon. Sie entwickelt sich weiter, wenn sie einen Mondstein trägt und wird zu einer stärkeren Nidoqueen.",
+            "Größe": "0,8 m",
+            "Kategorie":"Giftdorn",
+            "Gewicht": "20,0kg",
+            "Fähigkeit": "Giftdorn, Rivalität",
+            "Geschlecht": "w",
+            "Bild":"images/030.png",
+            "Link":"pokemon30"
+        }
+        ]
+
+    div.centered-image
+        img.my-image(src="https://cdn.discordapp.com/attachments/1088410224198696961/1123530621982081136/pokedex_N_WgWrJK0s.png", alt="")
+
+    div.kartenset
+        each element in pokemonData
+            div.karte
+                h3.karttext= element.Name
+                table
+                    tr
+                        th
+                            a(href=element.Link)
+                             img(src=element.Bild)
+                    tr
+                        th
+                        th= element.Id

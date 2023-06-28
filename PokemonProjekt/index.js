@@ -12,7 +12,7 @@ const pokemonData = [{
             "Gewicht": "6,9kg",
             "Fähigkeit": "Notdünger",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/001.png",
+            "Bild":"images/001.png",
             "Link":"/public/html/pokemon1.html"
         },
         {
@@ -25,7 +25,7 @@ const pokemonData = [{
             "Gewicht": "13,0kg",
             "Fähigkeit": "Notdünger",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/002.png",
+            "Bild":"images/002.png",
             "Link":"/public/html/pokemon2.html"
         },
         {
@@ -38,7 +38,7 @@ const pokemonData = [{
             "Gewicht": "100,0kg",
             "Fähigkeit": "Notdünger",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/003.png",
+            "Bild":"images/003.png",
             "Link":"/public/html/pokemon3.html"
         },
         {
@@ -51,7 +51,7 @@ const pokemonData = [{
             "Gewicht": "8,5kg",
             "Fähigkeit": "Großbrand",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/004.png",
+            "Bild":"images/004.png",
             "Link":"/public/html/pokemon4.html"
         },
         {
@@ -64,7 +64,7 @@ const pokemonData = [{
             "Gewicht": "19,0kg",
             "Fähigkeit": "Großbrand",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/005.png",
+            "Bild":"images/005.png",
             "Link":"/public/html/pokemon5.html"
         },
         {
@@ -77,7 +77,7 @@ const pokemonData = [{
             "Gewicht": "90,5kg",
             "Fähigkeit": "Großbrand",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/006.png",
+            "Bild":"images/006.png",
             "Link":"/public/html/pokemon6.html"
         },
         {
@@ -90,7 +90,7 @@ const pokemonData = [{
             "Gewicht": "9,0kg",
             "Fähigkeit": "Sturzbach",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/007.png",
+            "Bild":"images/007.png",
             "Link":"/public/html/pokemon7.html"
         },
         {
@@ -103,7 +103,7 @@ const pokemonData = [{
             "Gewicht": "22,5kg",
             "Fähigkeit": "Sturzbach",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/008.png",
+            "Bild":"images/008.png",
             "Link":"/public/html/pokemon8.html"
         },
         {
@@ -116,7 +116,7 @@ const pokemonData = [{
             "Gewicht": "6,9kg",
             "Fähigkeit": "Notdünger",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/009.png",
+            "Bild":"images/009.png",
             "Link":"/public/html/pokemon9.html"
         },
         {
@@ -129,7 +129,7 @@ const pokemonData = [{
             "Gewicht": "2,9kg",
             "Fähigkeit": "Puderabwehr",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/010.png",
+            "Bild":"images/010.png",
             "Link":"/public/html/pokemon10.html"
         },
         {
@@ -142,7 +142,7 @@ const pokemonData = [{
             "Gewicht": "9,9kg",
             "Fähigkeit": "Expidermis",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/011.png",
+            "Bild":"images/011.png",
             "Link":"/public/html/pokemon11.html"
         },
         {
@@ -155,7 +155,7 @@ const pokemonData = [{
             "Gewicht": "32,0kg",
             "Fähigkeit": "Facettenauge",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/012.png",
+            "Bild":"images/012.png",
             "Link":"/public/html/pokemon12.html"
         },
         {
@@ -168,7 +168,7 @@ const pokemonData = [{
             "Gewicht": "3,2kg",
             "Fähigkeit": "Puderabwehr",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/013.png",
+            "Bild":"images/013.png",
             "Link":"/public/html/pokemon13.html"
         },
         {
@@ -181,7 +181,7 @@ const pokemonData = [{
             "Gewicht": "10,0kg",
             "Fähigkeit": "Expidermis",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/014.png",
+            "Bild":"images/014.png",
             "Link":"/public/html/pokemon14.html"
         },
         {
@@ -194,7 +194,7 @@ const pokemonData = [{
             "Gewicht": "29,5kg",
             "Fähigkeit": "Hexaplaga",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/015.png",
+            "Bild":"images/015.png",
             "Link":"/public/html/pokemon15.html"
         },
         {
@@ -207,7 +207,7 @@ const pokemonData = [{
             "Gewicht": "1,8kg",
             "Fähigkeit": "Adlerauge & Taumelschritt",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/016.png",
+            "Bild":"images/016.png",
             "Link":"/public/html/pokemon16.html"
         },
         {
@@ -220,7 +220,7 @@ const pokemonData = [{
             "Gewicht": "30,0kg",
             "Fähigkeit": "Adlerauge & Taumelschritt",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/017.png",
+            "Bild":"images/017.png",
             "Link":"/public/html/pokemon17.html"
         },
         {
@@ -233,7 +233,7 @@ const pokemonData = [{
             "Gewicht": "39,5kg",
             "Fähigkeit": "Adlerauge & Taumelschritt",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/018.png",
+            "Bild":"images/018.png",
             "Link":"/public/html/pokemon18.html"
         },
         {
@@ -246,7 +246,7 @@ const pokemonData = [{
             "Gewicht": "3,5kg",
             "Fähigkeit": "Angsthase",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/019.png",
+            "Bild":"images/019.png",
             "Link":"/public/html/pokemon19.html"
         },
         {
@@ -259,15 +259,145 @@ const pokemonData = [{
             "Gewicht": "18,5kg",
             "Fähigkeit": "Angsthase",
             "Geschlecht": "m, w",
-            "Bild":"/public/images/020.png",
-            "Link":"/public/html/pokemon20.html"
-}
-]
+            "Bild":"images/020.png",
+            "Link":"/public/html/pokemon20"
+         },
+         {
+            "Id": "021",
+            "Name": "Habitak",
+            "Typ": ["Käfer", "Flug"],
+            "Beschreibung": "Habitak ist ein aggressiver Jäger und greift seine Beute mit seinem scharfen Schnabel an. Es baut Nester in Baumhöhlen.",
+            "Größe": "0,3 m",
+            "Kategorie":"Kleinvogel",
+            "Gewicht": "2,0kg",
+            "Fähigkeit": "Adlerauge",
+            "Geschlecht": "m, w",
+            "Bild":"images/021.png",
+            "Link":"pokemon21"
+        },
+        {
+            "Id": "022",
+            "Name": "Ibitak",
+            "Typ": ["Käfer", "Flug"],
+            "Beschreibung": "Ibitak patrouilliert stolz sein Revier in den Himmel. Es greift Eindringlinge mutig an, um sein Territorium zu verteidigen.",
+            "Größe": "1,2 m",
+            "Kategorie":"Pickvogel",
+            "Gewicht": "38,0kg",
+            "Fähigkeit": "Adlerauge",
+            "Geschlecht": "m, w",
+            "Bild":"images/022.png",
+            "Link":"pokemon22"
+        },
+        {
+            "Id": "023",
+            "Name": "Rettan",
+            "Typ": ["Gift"],
+            "Beschreibung": "Rettan hat eine scharfe Klaue an seinem Schwanzende, die es geschickt einsetzt. Es gilt als Symbol der Stärke und des Stolzes.",
+            "Größe": "2,0 m",
+            "Kategorie":"Schlange",
+            "Gewicht": "6,9kg",
+            "Fähigkeit": "Expidermis, Bedroher",
+            "Geschlecht": "m, w",
+            "Bild":"images/023.png",
+            "Link":"pokemon23"
+        },
+        {
+            "Id": "024",
+            "Name": "Arbok",
+            "Typ": ["Gift"],
+            "Beschreibung": "Arbok steht für Angst und Schrecken. Es hat ein Muster auf seinem Bauch, das wie ein furchteinflößendes Gesicht aussieht.",
+            "Größe": "3,5 m",
+            "Kategorie":"Kobra",
+            "Gewicht": "65,0kg",
+            "Fähigkeit": "Expidermis, Bedroher",
+            "Geschlecht": "m, w",
+            "Bild":"images/024.png",
+            "Link":"pokemon24"
+        },
+        {
+            "Id": "025",
+            "Name": "Pikachu",
+            "Typ": ["Elektro"],
+            "Beschreibung": "Pikachu ist ein niedliches und energiegeladenes Pokémon. Es erzeugt Elektrizität durch Reiben seiner Backen zusammen.",
+            "Größe": "0,4 m",
+            "Kategorie":"Maus",
+            "Gewicht": "6,0kg",
+            "Fähigkeit": "Statik",
+            "Geschlecht": "m, w",
+            "Bild":"images/025.png",
+            "Link":"pokemon25"
+        },
+        {
+            "Id": "026",
+            "Name": "Raichu",
+            "Typ": ["Elektro"],
+            "Beschreibung": "Raichu besitzt eine hohe elektrische Ladung in seinem Körper. Es kann starke Elektroimpulse erzeugen, um seine Feinde zu besiegen.",
+            "Größe": "0,8 m",
+            "Kategorie":"Maus",
+            "Gewicht": "30,0kg",
+            "Fähigkeit": "Statik",
+            "Geschlecht": "m, w",
+            "Bild":"images/026.png",
+            "Link":"pokemon26"
+        },
+        {
+            "Id": "027",
+            "Name": "Sandan",
+            "Typ": ["Boden"],
+            "Beschreibung": "Sandan hat scharfe Stacheln auf seinem Rücken, die es zum Schutz einsetzt. Es rollt sich zusammen und versteckt sich in seinem Panzer, wenn es bedroht wird.",
+            "Größe": "0,6 m",
+            "Kategorie":"Maus",
+            "Gewicht": "12,0kg",
+            "Fähigkeit": "Sandschleier",
+            "Geschlecht": "m, w",
+            "Bild":"images/027.png",
+            "Link":"pokemon27"
+        },
+        {
+            "Id": "028",
+            "Name": "Sandamer",
+            "Typ": ["Boden"],
+            "Beschreibung": "Sandamer ist ein schnelles und wendiges Pokémon. Es kann Sandstürme erzeugen, um seine Gegner zu verwirren und anzugreifen.",
+            "Größe": "1,0 m",
+            "Kategorie":"Maus",
+            "Gewicht": "29,5kg",
+            "Fähigkeit": "Sandschleier",
+            "Geschlecht": "m, w",
+            "Bild":"images/028.png",
+            "Link":"pokemon28"
+        },
+        {
+            "Id": "029",
+            "Name": "Nidoran (weiblich)",
+            "Typ": ["Gift"],
+            "Beschreibung": "Nidoran (weiblich) hat scharfe Giftstacheln auf ihrem Rücken. Sie sind vorsichtig und scheu, aber können auch mutig sein, wenn sie ihr Territorium verteidigen.",
+            "Größe": "0,4 m",
+            "Kategorie":"Giftdorn",
+            "Gewicht": "7,0kg",
+            "Fähigkeit": "Giftdorn, Rivalität",
+            "Geschlecht": "w",
+            "Bild":"images/029.png",
+            "Link":"pokemon29"
+        },
+        {
+            "Id": "030",
+            "Name": "Nidorina",
+            "Typ": ["Gift"],
+            "Beschreibung": "Nidorina ist ein sanftmütiges Pokémon. Sie entwickelt sich weiter, wenn sie einen Mondstein trägt und wird zu einer stärkeren Nidoqueen.",
+            "Größe": "0,8 m",
+            "Kategorie":"Giftdorn",
+            "Gewicht": "20,0kg",
+            "Fähigkeit": "Giftdorn, Rivalität",
+            "Geschlecht": "w",
+            "Bild":"images/030.png",
+            "Link":"pokemon30"
+        }
+        ]
 
 // Schleife über die Pokémon-Daten
 pokemonData.forEach((pokemon, index) => {
     // Verwende die Pug-Vorlage, um das HTML zu generieren
-    const html = pug.renderFile('index.pug', { pokemon });
+    const html = pug.renderFile('index1.pug', { pokemon });
   
     // Speichere das generierte HTML in einer Datei
     fs.writeFileSync(`public/html/pokemon${index + 1}.html`, html);

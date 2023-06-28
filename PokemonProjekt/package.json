@@ -6,7 +6,7 @@
   },
   "name": "pokemonprojekt",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "serverExpress.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
